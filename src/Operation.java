@@ -5,7 +5,7 @@ public class Operation {
     private String func;
 
 
-    public Operation(double num1, double result,double num2, String func) {
+    public Operation(double num1, double result, double num2, String func) {
         this.num1 = num1;
         this.result = result;
         this.func = func;
