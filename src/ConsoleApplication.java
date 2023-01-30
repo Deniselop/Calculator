@@ -1,11 +1,10 @@
-public class ConsoleApplication implements Application {
+public class ConsoleApplication {
     private final Reader reader = new ConsoleReader();
     private final Writer writer = new ConsoleWriter();
     private final Calculator calculator = new Calculator();
 
     private Operation result;
 
-    @Override
     public void run() {
         while (true) {
             writer.write("Enter first number");
