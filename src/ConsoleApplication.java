@@ -5,6 +5,7 @@ public class ConsoleApplication {
 
     private Operation result;
 
+
     public void run() {
         while (true) {
             writer.write("Enter first number");
@@ -14,7 +15,18 @@ public class ConsoleApplication {
             writer.write("Enter operation type");
             String func = reader.readString();
             Operation operations = new Operation(number1, number2, func);
-            result = calculator.calculator(operations);
+            Operation result = calculator.calculator(operations);
+            writer.write("Result = " + result.getResult());
+
+            writer.write("Would you like to continue? \n 1 - Continue, 2 - Exit");
+            double number = reader.readDouble();
+
+            switch ((int) number) {
+                case 1:
+                    continue;
+                case 2:
+                    return;
+            }
         }
     }
 }
