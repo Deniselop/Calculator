@@ -32,6 +32,10 @@ public class Operation {
         this.result = result;
     }
 
+    public void setFunc(String func){
+        this.func = func;
+    }
+
     @Override
     public String toString() {
         return "Operation{" +

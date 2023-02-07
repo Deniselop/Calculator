@@ -19,22 +19,22 @@ public class Calculator {
                 return operation;
             }
         }
-        return null;
+        return operation;
     }
 
-    static double sum(double a, double b) {
-        return a + b;
+    static double sum(double num1, double num2) {
+        return num1 + num2;
     }
 
-    static double sub(double a, double b) {
-        return a - b;
+    static double sub(double num1, double num2) {
+        return num1 - num2;
     }
 
-    static double mult(double a, double b) {
-        return a * b;
+    static double mult(double num1, double num2) {
+        return num1 * num2;
     }
 
-    static double div(double a, double b) {
-        return a / b;
+    static double div(double num1, double num2) {
+        return num1 / num2;
     }
 }
