@@ -12,7 +12,7 @@ public class Operation {
         this.num2 = num2;
     }
 
-    public Operation(double number1, double number2, String func) {
+    public Operation(double num1, double num2, String func) {
     }
 
     public double getNum1() {
@@ -27,14 +27,11 @@ public class Operation {
         return func;
     }
 
-    public double getResult(){return result; }
+    public double getResult() { return result; }
     public void setResult(double result) {
         this.result = result;
     }
 
-    public void setFunc(String func){
-        this.func = func;
-    }
 
     @Override
     public String toString() {
